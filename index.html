@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body{ background-image: url("images/bg-desktop.svg");
+          background-color:hsl(257, 40%, 49%);
+          font-family:"open sans",sans-serif;
+          color:white;
+          font-weight:400;
+          background-repeat: no-repeat;
+    }
+    main{
+         display:flex;
+         flex-direction:row;
+    }
+    .box-1{
+           width:720px;
+           display:flex;
+           flex-direction:column;
+           padding:40px;
+    }
+    .box-2{
+           width:720px;
+           padding:40px;
+    }
+    h3{font-family:"poppins",sans-serif;
+       color:white;
+       font-weight:600;
+       font-size:28px;
+    }
+    button{border:none;
+           height:40px;
+          width:130px;
+          border-radius:30px;
+          color:hsl(257, 40%, 49%);
+          cursor:pointer;
+    }
+    button:hover{background-color:hsl(300, 69%, 71%);
+                 color:white;
+
+    }
+    .social{height:30px;
+            border-radius:50%;
+            display:flex;
+            border:3px white;
+    }
+    .footer{display:flex;
+            flex-direction:row;
+            justify-content:right;
+            gap:5px;
+            cursor:pointer;
+    }
+    @media(max-width:700px){
+      main{
+    flex-direction: column;
+   
+      }
+      .footer{
+        justify-content:center;
+      }
+      body{
+        background-image: url("images/bg-mobile.svg");
+      }
+    
+     
+    }
+   
+  </style>
+</head>
+<body>
+  <main>
+    <div class="box-1">
+      <div style="margin-bottom:50px;">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div style="display:flex;">
+        <img src="images/illustration-mockups.svg" alt="illustration">
+      </div>
+    </div>
+    <div class="box-2">
+      <div style="margin-top:180px;margin-bottom:100px;">
+        <h3>Build The Community </h3>
+        <h3>Your fans Will Love</h3>
+        <p class="note-1">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+        <button>Register</button>
+      </div>
+      <div class="footer">
+        <div><img class="social" src="images/facebook-logo.jpg" alt="facebook-logo"></div>
+        <div><img src="images/x-image.jpg" alt="x" style="height:28px;width:30px;border-radius:50%;display:flex;"></div>
+        <div><img class="social" src="images/instagram.jpg" alt="instagram"></div>
+
+      </div>
+    </div>
+     
+  </main>
+  
+
+  
+</body>
+</html>
